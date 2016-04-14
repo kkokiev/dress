@@ -1,0 +1,35 @@
+.footer
+	padding-x(50px)
+	padding-y(30px)
+	color brand-dark
+	background main
+
+	&__links
+
+		> .grid
+			display table
+			width 100%
+
+			> div
+				display table-cell
+				float none
+				vertical-align bottom
+
+	&__list
+		padding-right 15px
+
+		> li
+			margin-bottom 10px
+
+			&:last-child
+				margin-bottom 0
+
+			> a
+				color brand-dark
+				font-family font-book
+				font-size 22px
+				text-decoration none
+
+				&:hover,
+				&:focus
+					color light

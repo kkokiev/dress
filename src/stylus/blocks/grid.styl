@@ -1,0 +1,26 @@
+.grid
+	position relative
+
+	&_margin-13
+		margin-x(-13px)
+
+		+below(large)
+			margin-x(0)
+
+	&_margin-13 > [class*='col-']
+		padding-x(13px)
+
+		+below(large)
+			padding-x(0)
+
+	&_s-margin-8 //
+		margin-x(-8px)
+
+		+below(tablet)
+			margin-x(0)
+
+	&_s-margin-8 > [class*='col-']
+		padding-x(8px)
+
+		+below(tablet)
+			padding-x(0)

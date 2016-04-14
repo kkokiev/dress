@@ -1,0 +1,72 @@
+.book-form
+	max-width 576px
+	margin-x(auto)
+	font-family font-book
+
+	> .grid
+		margin-x(-45px)
+
+		> [class*='col-']
+			padding-x(45px)
+
+	&__input-grp
+		display table
+		width 100%
+		max-width 100%
+		margin-bottom 30px
+		padding-bottom 12px
+		border-bottom 6px solid light
+
+		&_noborder
+			border 0
+
+	&__label-wrap
+		display table-cell
+
+	&__label
+		font-size 19px
+		white-space nowrap
+
+	&__input-wrap
+		display table-cell
+
+	&__input
+		width 100%
+		padding-x(5px)
+		color light
+		font-size 16px
+		font-style italic
+		background transparent
+		border 0
+
+	&__submit
+		display block
+		height 30px
+		width 100%
+		padding-x(20px)
+		font-family font-medium
+		text-align right
+		background light
+		border 0
+		tr(.3s)
+
+		&:hover,
+		&:focus
+			background brand
+
+	&__contacts-wrap
+		padding-top 5px
+		border-top 2px solid light
+
+	&__contacts
+		font-size 16px
+		line-height 1.4
+
+	&__contacts-link
+		color light
+		text-decoration none
+
+		&:hover,
+		&:focus
+			color brand
+

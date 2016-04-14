@@ -1,0 +1,31 @@
+.intro
+	position relative
+	display table
+	height 100vh
+	width 100%
+	color light
+	bg-image()
+	background-color main
+
+	&__wrap
+		display table-cell
+		// padding 120px
+		vertical-align middle
+		background-color rgba(#434040, .57) //brand-dark
+
+		+below(tablet)
+			padding-x(50px)
+
+		&_nobg
+			background-color transparent
+
+	&__main-title
+		max-width 365px
+		margin-x(auto)
+
+		+below(smallest)
+			max-width 320px
+
+	&__main-title-img
+		width 100%
+
