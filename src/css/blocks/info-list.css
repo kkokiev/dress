@@ -1,0 +1,36 @@
+.info-list {
+  font-family: font-bold;
+}
+.info-list > li {
+  margin-bottom: 9px;
+}
+.info-list > li:last-child {
+  margin-bottom: 9px;
+}
+.info-list__date {
+  font-family: font-bold;
+  font-size: 14px;
+}
+.info-list__info {
+  padding-bottom: 5px;
+  font-size: 15px;
+  line-height: 1.2;
+  border-bottom: 1px solid main;
+}
+.info-list__btn {
+  display: inline-block;
+  color: main;
+  font-family: font-bold;
+  font-size: 15px;
+  line-height: 23px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: light;
+  border: 1px solid main;
+}
+.info-list__btn:hover,
+.info-list__btn:focus {
+  color: light;
+  background: main;
+}
+/*# sourceMappingURL=src/stylus/blocks/info-list.css.map */

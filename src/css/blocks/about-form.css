@@ -1,0 +1,31 @@
+.about-form__title {
+  font-size: 40px;
+}
+.about-form__input-grp {
+  display: table;
+  width: 100%;
+  padding-bottom: 8px;
+  border-bottom: 4px solid light;
+}
+.about-form__label-wrap {
+  display: table-cell;
+}
+.about-form__label {
+  font-size: 18px;
+  white-space: nowrap;
+}
+.about-form__input-wrap {
+  display: table-cell;
+}
+.about-form__input {
+  width: 100%;
+  color: light;
+  font-size: 16px;
+  font-style: italic;
+  background: transparent;
+  border: 0;
+}
+.about-form__submit {
+  margin-top: 4px;
+}
+/*# sourceMappingURL=src/stylus/blocks/about-form.css.map */
