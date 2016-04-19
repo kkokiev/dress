@@ -67,6 +67,23 @@
 			+below(largest)
 				display none
 
+		&_scroller
+			&:before
+				content ""
+				position absolute
+				top -10px
+				left 0
+				right 0
+				margin-x(auto)
+				display block
+				height 12px
+				width 128px
+				background light
+
+		&_scroller-dark
+			&:before
+				background main
+
 	&__section-wrap
 		height 92px
 		border-bottom 2px solid border

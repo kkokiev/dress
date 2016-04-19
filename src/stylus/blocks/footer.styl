@@ -33,10 +33,15 @@
 		padding-right 15px
 
 		+below(smallest)
-			margin-bottom 20px
+			padding-right 0
+			margin-bottom 10px
 
 		> li
 			margin-bottom 10px
+
+			+below(smallest)
+				display inline-block
+				padding-right 5px
 
 			&:last-child
 				margin-bottom 0
@@ -47,6 +52,9 @@
 				font-size 22px
 				text-decoration none
 
+				+below(tablet)
+					font-size 18px
+
 				&:hover,
 				&:focus
 					color light
@@ -56,3 +64,6 @@
 		+below(large)
 			padding-top 20px
 			text-align center
+
+		+below(tablet)
+					font-size 18px

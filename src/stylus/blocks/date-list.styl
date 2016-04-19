@@ -1,6 +1,5 @@
 .date-list
 	clearfix()
-	margin-left -6px
 
 	> li
 		position relative
@@ -11,15 +10,12 @@
 			content ""
 			position absolute
 			right -4px
-			bottom 3px
+			bottom 6px
 			display block
 			height 4px
 			width 4px
 			background main
 			border-radius(50%)
-
-		&:first-child
-			padding-left 0
 
 		&:last-child
 			&:after
@@ -28,9 +24,25 @@
 		> a
 			display inline-block
 			padding-x(6px)
+			padding-y(3px)
 			color main
+			font-size 22px
 			text-decoration none
+
+			+below(tablet)
+				font-size 16px
 
 			&:hover,
 			&:focus
 				color brand
+
+	> li.active
+
+		> a
+			color light
+			background brand
+
+			&:hover,
+			&:focus
+				color light
+				background brand

@@ -1,12 +1,21 @@
 .schedule
-	padding-y(80px)
-	padding-x(100px)
+	padding 90px
+
+	+below(large)
+		padding 20px
 
 	&__title
 		margin-bottom 80px
 		text-align center
 		font-size 142px
 		letter-spacing 0.03em
+
+		+below(1900px)
+			font-size 80px
+
+	&__item
+		+below(1400px)
+			margin-bottom 40px
 
 	&__subtitle
 		margin-bottom 10px
@@ -17,8 +26,15 @@
 		border-top 2px solid main
 		border-left 2px solid main
 
+		+below(1400px)
+			height auto
+			border-left 0
+
 		&_notopborder
 			border-top 0
+
+			+below(1400px)
+				border-top 2px solid main
 
 	&__table
 		margin-bottom 70px

@@ -55,6 +55,24 @@ if(!(window.console && console.log)) {
 
 
 	/**/
+	/*setup home page scroller (white rectangle above "Contact us")*/
+	/**/
+
+	$(window).on('scroll', function() {
+		var scrollTop = $(this).scrollTop();
+
+		var scroller = $('.header__section_scroller');
+
+		if(scrollTop > 0) {
+			scroller.addClass('header__section_scroller-dark');
+		} if(scrollTop === 0) {
+			scroller.removeClass('header__section_scroller-dark');
+			console.log('hi')
+		}
+	});
+
+
+	/**/
 	/*setup navbar show and hide*/
 	/**/
 	var $navBtn = $('#mobile-nav-btn'),

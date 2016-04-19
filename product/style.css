@@ -2918,9 +2918,6 @@ img {
     float: none;
   }
 }
-.date-list {
-  margin-left: -6px;
-}
 .date-list:after {
   display: table;
   clear: both;
@@ -2935,7 +2932,7 @@ img {
   content: "";
   position: absolute;
   right: -4px;
-  bottom: 3px;
+  bottom: 6px;
   display: block;
   height: 4px;
   width: 4px;
@@ -2944,9 +2941,6 @@ img {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
-.date-list > li:first-child {
-  padding-left: 0;
-}
 .date-list > li:last-child:after {
   display: none;
 }
@@ -2954,12 +2948,29 @@ img {
   display: inline-block;
   padding-left: 6px;
   padding-right: 6px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   color: #262424;
+  font-size: 22px;
   text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+  .date-list > li > a {
+    font-size: 16px;
+  }
 }
 .date-list > li > a:hover,
 .date-list > li > a:focus {
   color: #9f9389;
+}
+.date-list > li.active > a {
+  color: #fff;
+  background: #9f9389;
+}
+.date-list > li.active > a:hover,
+.date-list > li.active > a:focus {
+  color: #fff;
+  background: #9f9389;
 }
 .footer {
   padding-left: 50px;
@@ -3007,11 +3018,18 @@ img {
 }
 @media only screen and (max-width: 480px) {
   .footer__list {
-    margin-bottom: 20px;
+    padding-right: 0;
+    margin-bottom: 10px;
   }
 }
 .footer__list > li {
   margin-bottom: 10px;
+}
+@media only screen and (max-width: 480px) {
+  .footer__list > li {
+    display: inline-block;
+    padding-right: 5px;
+  }
 }
 .footer__list > li:last-child {
   margin-bottom: 0;
@@ -3022,6 +3040,11 @@ img {
   font-size: 22px;
   text-decoration: none;
 }
+@media only screen and (max-width: 768px) {
+  .footer__list > li > a {
+    font-size: 18px;
+  }
+}
 .footer__list > li > a:hover,
 .footer__list > li > a:focus {
   color: #fff;
@@ -3030,6 +3053,11 @@ img {
   .footer__copyright {
     padding-top: 20px;
     text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer__copyright {
+    font-size: 18px;
   }
 }
 .form {
@@ -3293,6 +3321,22 @@ img {
     display: none;
   }
 }
+.header__section_scroller:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 12px;
+  width: 128px;
+  background: #fff;
+}
+.header__section_scroller-dark:before {
+  background: #262424;
+}
 .header__section-wrap {
   height: 92px;
   border-bottom: 2px solid #3e3e3e;
@@ -3338,7 +3382,6 @@ img {
   margin-bottom: 9px;
 }
 .info-list__date {
-  font-family: 'geomanist-bold-webfont', Arial, sans-serif;
   font-size: 14px;
   white-space: nowrap;
   overflow: hidden;
@@ -3348,16 +3391,19 @@ img {
   margin-left: 15px;
   margin-right: 15px;
   padding-bottom: 5px;
+  font-family: 'geomanistbook', Arial, sans-serif;
   font-size: 15px;
   line-height: 1.2;
   border-bottom: 1px solid #262424;
+}
+.info-list__info span {
+  font-family: 'geomanist-bold-webfont', Arial, sans-serif;
 }
 .info-list__btn {
   display: inline-block;
   padding-left: 7px;
   padding-right: 7px;
   color: #262424;
-  font-family: 'geomanist-bold-webfont', Arial, sans-serif;
   font-size: 15px;
   line-height: 23px;
   text-decoration: none;
@@ -3522,6 +3568,15 @@ img {
     padding: 0;
   }
 }
+.page__alt-wrap {
+  padding: 90px;
+}
+@media only screen and (max-width: 1400px) {
+  .page__alt-wrap {
+    padding: 0;
+    padding-top: 90px;
+  }
+}
 .page__content-wrap {
   padding-top: 60px;
   padding-left: 50px;
@@ -3534,17 +3589,34 @@ img {
   color: #9f9389;
   font-size: 30px;
 }
+@media only screen and (max-width: 768px) {
+  .page__text {
+    font-size: 20px;
+  }
+}
 .schedule {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 90px;
+}
+@media only screen and (max-width: 1100px) {
+  .schedule {
+    padding: 20px;
+  }
 }
 .schedule__title {
   margin-bottom: 80px;
   text-align: center;
   font-size: 142px;
   letter-spacing: 0.03em;
+}
+@media only screen and (max-width: 1900px) {
+  .schedule__title {
+    font-size: 80px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .schedule__item {
+    margin-bottom: 40px;
+  }
 }
 .schedule__subtitle {
   margin-bottom: 10px;
@@ -3555,8 +3627,19 @@ img {
   border-top: 2px solid #262424;
   border-left: 2px solid #262424;
 }
+@media only screen and (max-width: 1400px) {
+  .schedule__deco {
+    height: auto;
+    border-left: 0;
+  }
+}
 .schedule__deco_notopborder {
   border-top: 0;
+}
+@media only screen and (max-width: 1400px) {
+  .schedule__deco_notopborder {
+    border-top: 2px solid #262424;
+  }
 }
 .schedule__table {
   margin-bottom: 70px;
@@ -3998,6 +4081,7 @@ img {
 }
 .topline__select {
   display: table-cell;
+  padding-left: 15px;
   vertical-align: middle;
 }
 .topline__nav-wrap {
