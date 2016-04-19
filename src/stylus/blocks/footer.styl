@@ -4,19 +4,36 @@
 	color brand-dark
 	background main
 
+	+below(largest)
+		padding-x(20px)
+		padding-y(20px)
+
 	&__links
+
+		+below(large)
+			padding-top 20px
 
 		> .grid
 			display table
 			width 100%
+
+			+below(large)
+				display block
 
 			> div
 				display table-cell
 				float none
 				vertical-align bottom
 
+				+below(large)
+					display block
+					float left
+
 	&__list
 		padding-right 15px
+
+		+below(smallest)
+			margin-bottom 20px
 
 		> li
 			margin-bottom 10px
@@ -33,3 +50,9 @@
 				&:hover,
 				&:focus
 					color light
+
+	&__copyright
+
+		+below(large)
+			padding-top 20px
+			text-align center

@@ -1,0 +1,101 @@
+.header
+	position fixed
+	width 100%
+	z-index 1000
+
+	+below(largest)
+		height auto
+
+	&__section
+		width 100%
+		height 92px //2px for borders
+		padding-x(90px)
+		background light
+
+		+below(largest)
+			height auto
+			padding-y(10px)
+			padding-x(20px)
+
+		&_side-1
+			position fixed
+			left -2px
+			bottom -92px
+			width 100vh
+
+			-webkit-transform-origin: left top 0;
+			-moz-transform-origin: left top 0;
+			-ms-transform-origin: left top 0;
+			-o-transform-origin: left top 0;
+			transform-origin: left top 0;
+
+			-webkit-transform: rotate(-90deg);
+			-moz-transform: rotate(-90deg);
+			-ms-transform: rotate(-90deg);
+			-o-transform: rotate(-90deg);
+			transform: rotate(-90deg);
+
+			+below(largest)
+				display none
+
+		&_side-2
+			position fixed
+			right -2px
+			bottom -92px
+			width 100vh
+
+			-webkit-transform-origin: right top 0;
+			-moz-transform-origin: right top 0;
+			-ms-transform-origin: right top 0;
+			-o-transform-origin: right top 0;
+			transform-origin: right top 0;
+
+			-webkit-transform: rotate(90deg);
+			-moz-transform: rotate(90deg);
+			-ms-transform: rotate(90deg);
+			-o-transform: rotate(90deg);
+			transform: rotate(90deg);
+
+			+below(largest)
+				display none
+
+		&_bottom
+			position fixed
+			bottom 0
+			padding-x(88px)
+
+			+below(largest)
+				display none
+
+	&__section-wrap
+		height 92px
+		border-bottom 2px solid border
+
+		+below(largest)
+			height auto
+			border-bottom 0
+
+		&_bottom
+			border-bottom 0
+			border-top 2px solid border
+
+		&_align-center
+			text-align center
+
+	&__nav-wrap
+		display inline-block
+
+	&__mobile-nav
+		height 0
+		overflow hidden
+		background light
+
+		+below(largest)
+			display block
+
+	&__mobile-nav-wrap
+		padding-top 40px
+		padding-bottom 10px
+		border-bottom 1px solid main
+
+

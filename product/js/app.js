@@ -15,14 +15,29 @@ if(!(window.console && console.log)) {
 
 (function () {
 
-	/*setup custom select*/
+	/**/
+	/*setup custom country select (stores page)*/
+	/**/
+	$("#select-language").select2({
+		placeholder: 'Language',
+		minimumResultsForSearch: Infinity, //hide search
+		closeOnSelect: true
+	});
+
+
+	/**/
+	/*setup custom country select (stores page)*/
+	/**/
 	$("#select-country").select2({
 		placeholder: 'Choose your country',
 		minimumResultsForSearch: Infinity, //hide search
 		closeOnSelect: true
 	});
 
+
+	/**/
 	/*setup scrollspy for Stores page*/
+	/**/
 	$(window).on('scroll', function() {
 		var scrollTop = $(this).scrollTop();
 
@@ -36,5 +51,43 @@ if(!(window.console && console.log)) {
 			}
 		});
 	});
+	/*end setup scrollspy for Stores page*/
+
+
+	/**/
+	/*setup navbar show and hide*/
+	/**/
+	var $navBtn = $('#mobile-nav-btn'),
+		$navBar = $('#mobile-nav');
+
+	function hideNavbar() {
+		$navBar.removeClass('js-navbar').animate({height: '0'}, 300);
+	};
+
+	$navBtn.on('click', function(event) {
+		event.preventDefault();
+
+		if($navBar.hasClass('js-navbar')){
+			hideNavbar();
+
+		} else {
+			$navBar.addClass('js-navbar');
+			var curHeight = $navBar.height();
+			$navBar.css('height', 'auto');
+			var autoHeight = $navBar.height();
+			$navBar.height(curHeight).animate({height: autoHeight}, 300);
+		}
+	});
+
+	$('.header').on('click', function(event) {
+		event.stopPropagation();
+	});
+
+	$('body').on('click', function() {
+		hideNavbar();
+	});
+	/*end setup navbar show and hide*/
+
+
 })(jQuery);
 

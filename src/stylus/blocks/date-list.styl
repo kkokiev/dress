@@ -1,0 +1,36 @@
+.date-list
+	clearfix()
+	margin-left -6px
+
+	> li
+		position relative
+		float left
+		margin-right 4px
+
+		&:after
+			content ""
+			position absolute
+			right -4px
+			bottom 3px
+			display block
+			height 4px
+			width 4px
+			background main
+			border-radius(50%)
+
+		&:first-child
+			padding-left 0
+
+		&:last-child
+			&:after
+				display none
+
+		> a
+			display inline-block
+			padding-x(6px)
+			color main
+			text-decoration none
+
+			&:hover,
+			&:focus
+				color brand
