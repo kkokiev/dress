@@ -1,0 +1,102 @@
+.insta-item
+	position relative
+	overflow hidden
+
+	&__img
+		height 0
+		padding-bottom 100%
+		bg-image()
+
+	&__logo-wrap
+		display block
+		position absolute
+		top 0
+		left 0
+		height 100%
+		width 100%
+
+	&__logo
+		position absolute
+		height 70px
+		width 70px
+		top 0
+		bottom 0
+		left 0
+		right 0
+		margin-x(auto)
+		margin-y(auto)
+		background-image url(images/static/insta-photo.png)
+		bg-image()
+
+	&__overlay
+		position absolute
+		top -100%
+		left 0
+		height 100%
+		width 100%
+		background rgba(0,0,0 .5)
+		tr(.4s)
+
+.insta-item
+
+	&:hover,
+	&:focus
+
+		.insta-item__overlay
+			top 0
+
+.insta-item
+
+	&__icons-wrap
+		position absolute
+		top 50%
+		display block
+		width 100%
+		margin-y(auto)
+		text-align center
+		-webkit-transform: translateY(-50%)
+		-moz-transform: translateY(-50%)
+		-o-transform: translateY(-50%)
+		transform: translateY(-50%)
+
+	&__meta
+		position relative
+		display inline-block
+		margin-right 15px
+		color light
+		text-decoration none
+
+		&:hover,
+		&:focus
+			opacity-light()
+
+		&:last-child
+			margin-right 0
+
+		&_likes
+			padding-left 30px
+
+			&:before
+				content ""
+				position absolute
+				left 0
+				display block
+				height 20px
+				width 20px
+				background-image: url(images/static/insta-like.png)
+				bg-image()
+
+		&_comments
+			padding-left 36px
+
+			&:before
+				content ""
+				position absolute
+				left 0
+				display block
+				height 25px
+				width 30px
+				background-image: url(images/static/insta-comment.png)
+				bg-image()
+
+

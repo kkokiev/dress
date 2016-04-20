@@ -1,9 +1,13 @@
 .about
 
 	&__info-wrap
-		padding-y(200px)
+		padding-y(140px)
 		padding-x(80px)
 		border-bottom 5px solid brand
+
+		+below(largest)
+			padding-y(30px)
+			padding-x(20px)
 
 	&__info
 		position relative
@@ -11,6 +15,13 @@
 		font-family font-book
 		font-size 40px
 		line-height 1.2
+
+		+below(largest)
+			font-size 30px
+			padding-right 0
+
+		+below(tablet)
+			font-size 20px
 
 		&:after
 			content ""
@@ -22,6 +33,13 @@
 			width 144px
 			background light
 
+			+below(largest)
+				display none
+
 	&__form-wrap
 		padding-y(90px)
 		padding-x(80px)
+
+		+below(largest)
+			padding-y(30px)
+			padding-x(20px)

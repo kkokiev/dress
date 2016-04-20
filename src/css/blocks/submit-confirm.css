@@ -1,0 +1,10 @@
+.submit-confirm {
+  font-family: font-bold;
+  font-size: 250px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  overflow: hidden;
+below(1680px)
+below(tablet)
+}
+/*# sourceMappingURL=src/stylus/blocks/submit-confirm.css.map */
