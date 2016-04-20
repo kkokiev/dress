@@ -3,6 +3,7 @@
 
 	+below(large)
 		padding 20px
+		padding-y(40px)
 
 	&__title
 		margin-bottom 80px
@@ -13,8 +14,15 @@
 		+below(1900px)
 			font-size 80px
 
+		+below(tablet)
+			font-size 40px
+
+		+below(smallest)
+			font-size 30px
+			margin-bottom 40px
+
 	&__item
-		+below(1400px)
+		+below(largest)
 			margin-bottom 40px
 
 	&__subtitle
@@ -26,18 +34,21 @@
 		border-top 2px solid main
 		border-left 2px solid main
 
-		+below(1400px)
+		+below(largest)
 			height auto
 			border-left 0
 
 		&_notopborder
 			border-top 0
 
-			+below(1400px)
+			+below(largest)
 				border-top 2px solid main
 
 	&__table
 		margin-bottom 70px
+
+		+below(largest)
+			margin-bottom 20px
 
 	&__text
 		color brand

@@ -67,7 +67,6 @@ if(!(window.console && console.log)) {
 			scroller.addClass('header__section_scroller-dark');
 		} if(scrollTop === 0) {
 			scroller.removeClass('header__section_scroller-dark');
-			console.log('hi')
 		}
 	});
 
