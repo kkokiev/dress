@@ -3222,6 +3222,104 @@ img {
 .form__contacts-link:focus {
   color: #9f9389;
 }
+.gallery-item {
+  position: relative;
+  cursor: pointer;
+}
+.gallery-item__preview {
+  height: 0;
+  padding-bottom: 110%;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.gallery-item__info-wrap {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background: rgba(255,255,255,0.7);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.gallery-item__info {
+  font-family: 'geomanistbook', Arial, sans-serif;
+  font-size: 12px;
+}
+.gallery-item__popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255,255,255,0.5);
+  z-index: 100;
+}
+.gallery-item__popup-inner {
+  position: absolute;
+  top: 90px;
+  bottom: 90px;
+  left: 90px;
+  right: 90px;
+}
+.gallery-item__img-wrap {
+  position: relative;
+  display: inline-block;
+}
+.gallery-item__img-content {
+  position: relative;
+}
+.gallery-item__img {
+  display: block;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.gallery-item__img-info {
+  position: absolute;
+  bottom: 40px;
+  color: #fff;
+}
+.gallery {
+  min-height: 100vh;
+  padding: 90px;
+  background: #262424;
+}
+@media only screen and (max-width: 1400px) {
+  .gallery {
+    padding: 0;
+    padding-top: 90px;
+  }
+}
+.gallery__wrap {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.gallery__wrap > .grid {
+  margin-left: -4px;
+  margin-right: -4px;
+}
+.gallery__wrap > .grid > div {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.gallery__item {
+  padding-bottom: 25px;
+}
 .grid {
   position: relative;
 }

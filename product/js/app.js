@@ -106,5 +106,68 @@ if(!(window.console && console.log)) {
 	/*end setup navbar show and hide*/
 
 
+
+
+
+
+
+
+	var galleryItem = $('.gallery-item__demo'),
+		galleryItemPopup = $('.gallery-item__popup');
+
+	//show popup on click
+	galleryItem.on('click', function(){
+		var thisGalleryPopup = $(this).next();
+		thisGalleryPopup.css('display', 'block');
+
+		//setup popup image height*
+		var setPopupImgHeight = function(){
+			var popupInnerHeight = thisGalleryPopup
+					.find('.gallery-item__popup-inner')
+					.height(),
+				popupImg = thisGalleryPopup
+					.find('.gallery-item__img'),
+				popupImgWrap = thisGalleryPopup
+					.find('.gallery-item__img-wrap');
+
+			popupImg.css('max-height', popupInnerHeight);
+		}
+		setPopupImgHeight();
+		$(window).resize(function(){
+			setPopupImgHeight();
+		});
+
+		/*
+		взять левый офсет
+		взять правый офсет = ширина экрана - (левый офсет + ширина айтема)
+
+		если левый офсет < правого
+			.gallery-item__img-wrap (релатив) получает left = левый офсет
+
+		если левый офсет > правого
+			.gallery-item__img-wrap (релатив) получает left = (левый офсет-ширина .gallery-item__img-wrap)
+		*/
+
+		//check left and right offset of the current galleryItem
+		var leftOffset = $(this).offset().left,
+			galleryItemWidth = $(this).width(),
+			windowWidth = $(window).width(),
+			rightOffset = windowWidth - leftOffset - galleryItemWidth;
+
+		if(leftOffset < rightOffset) {
+			$('.gallery-item__img-wrap').css('left', (leftOffset - 90));
+			//нужно сделать что-то с шириной картинки
+			var maxImgWidth = $(window).width() -180 - leftOffset;
+			$('.gallery-item__img-wrap').css('max-width', maxImgWidth);
+		}
+
+
+	});
+
+	//hide popup
+	galleryItemPopup.on('click', function(){
+		galleryItemPopup.css('display', 'none');
+	})
+
 })(jQuery);
 
