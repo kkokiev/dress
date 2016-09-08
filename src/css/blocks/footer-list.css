@@ -1,0 +1,25 @@
+.footer-list ul > li {
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+  padding-right: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+below(600px)
+below(480px)
+}
+.footer-list ul > li:nth-child(3n) {
+  clear: both;
+}
+.footer-list ul > li > a {
+  color: #8c8989;
+font-family
+  font-size: 22px;
+  text-decoration: none;
+below(1600px)
+}
+.footer-list ul > li > a:hover,
+.footer-list ul > li > a:focus {
+  color: light;
+}
+/*# sourceMappingURL=src/stylus/blocks/footer-list.css.map */

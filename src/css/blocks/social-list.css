@@ -1,0 +1,40 @@
+.social-list {
+  display: inline-block;
+}
+.social-list > li {
+  float: left;
+  margin-right: 9px;
+below(600px)
+}
+.social-list > li:last-child {
+  margin-right: 0;
+}
+.social-list > li > a {
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  text-decoration: none;
+below(768px)
+}
+.social-list__insta {
+  background-image: url("images/static/icon-instagram.png");
+}
+.social-list__insta:hover,
+.social-list__insta:focus {
+  background-image: url("images/static/icon-instagram-light.png");
+}
+.social-list__pinterest {
+  background-image: url("images/static/icon-pinterest.png");
+}
+.social-list__pinterest:hover,
+.social-list__pinterest:focus {
+  background-image: url("images/static/icon-pinterest-light.png");
+}
+.social-list__facebook {
+  background-image: url("images/static/icon-facebook.png");
+}
+.social-list__facebook:hover,
+.social-list__facebook:focus {
+  background-image: url("images/static/icon-facebook-light.png");
+}
+/*# sourceMappingURL=src/stylus/blocks/social-list.css.map */

@@ -1,0 +1,17 @@
+.page {
+  position: relative;
+}
+.page__wrap {
+  padding-bottom: 90px;
+below(1600px)
+below(1366px)
+}
+.page__content-wrap {
+  padding-top: 60px;
+below(1400px)
+}
+.page__section {
+  margin-bottom: 60px;
+below(1400px)
+}
+/*# sourceMappingURL=src/stylus/blocks/page.css.map */

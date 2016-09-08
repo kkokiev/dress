@@ -13,11 +13,25 @@
 		background-size cover
 		tr(0s)
 		
+		&:hover
+			background transparent url("images/static/icon-hamburger-hover.png") 0 0 no-repeat
+			-webkit-background-size cover
+			-moz-background-size cover
+			-o-background-size cover
+			background-size cover
+		
 		&_opened
 			background transparent url("images/static/icon-close.png") center 0 no-repeat
 			-webkit-background-size auto 100%
 			-moz-background-size auto 100%
 			-o-background-size auto 100%
 			background-size auto 100%
+			
+			&:hover
+				background transparent url("images/static/icon-close-hover.png") center 0 no-repeat
+				-webkit-background-size auto 100%
+				-moz-background-size auto 100%
+				-o-background-size auto 100%
+				background-size auto 100%
 			
 

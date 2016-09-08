@@ -2974,6 +2974,10 @@ font-family
     font-size: 18px;
   }
 }
+.footer-list ul > li > a:hover,
+.footer-list ul > li > a:focus {
+  color: #fff;
+}
 .footer {
   padding-left: 50px;
   padding-right: 50px;
@@ -3642,16 +3646,6 @@ font-family
     margin-bottom: 15px;
   }
 }
-.page__text {
-  color: #9f9389;
-  font-size: 30px;
-  line-height: 1.2;
-}
-@media only screen and (max-width: 1400px) {
-  .page__text {
-    font-size: 22px;
-  }
-}
 .select-language {
   color: #262424;
   font-family: 'geomanist-regular-webfont', Arial, sans-serif;
@@ -3843,6 +3837,10 @@ font-family
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  -webkit-transition: all 0s ease;
+  -moz-transition: all 0s ease;
+  -o-transition: all 0s ease;
+  transition: all 0s ease;
 }
 @media only screen and (max-width: 768px) {
   .social-list > li > a {
@@ -3852,6 +3850,17 @@ font-family
 }
 .social-list__insta {
   background-image: url("images/static/icon-instagram.png");
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.social-list__insta:hover,
+.social-list__insta:focus {
+  background-image: url("images/static/icon-instagram-light.png");
   background-color: transparent;
   background-position: center center;
   background-repeat: no-repeat;
@@ -3870,6 +3879,17 @@ font-family
   -o-background-size: cover;
   background-size: cover;
 }
+.social-list__pinterest:hover,
+.social-list__pinterest:focus {
+  background-image: url("images/static/icon-pinterest-light.png");
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .social-list__facebook {
   background-image: url("images/static/icon-facebook.png");
   background-color: transparent;
@@ -3879,6 +3899,31 @@ font-family
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.social-list__facebook:hover,
+.social-list__facebook:focus {
+  background-image: url("images/static/icon-facebook-light.png");
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.special-text p {
+  margin-bottom: 1em;
+  color: #9f9389;
+  font-size: 30px;
+  line-height: 1.2;
+}
+@media only screen and (max-width: 1400px) {
+  .special-text p {
+    font-size: 22px;
+  }
+}
+.special-text p:last-child {
+  margin-bottom: 0;
 }
 .topline-menu {
   position: relative;
@@ -3898,8 +3943,22 @@ font-family
   -o-transition: all 0s ease;
   transition: all 0s ease;
 }
+.topline-menu__btn:hover {
+  background: transparent url("images/static/icon-hamburger-hover.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .topline-menu__btn_opened {
   background: transparent url("images/static/icon-close.png") center 0 no-repeat;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+}
+.topline-menu__btn_opened:hover {
+  background: transparent url("images/static/icon-close-hover.png") center 0 no-repeat;
   -webkit-background-size: auto 100%;
   -moz-background-size: auto 100%;
   -o-background-size: auto 100%;
