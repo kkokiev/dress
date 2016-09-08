@@ -1,119 +1,111 @@
 .header
-	position fixed
-	width 100%
-	z-index 1000
-
-	+below(largest)
-		height auto
-
-	&__section
-		width 100%
-		height 92px //2px for borders
-		padding-x(90px)
-		background light
-
-		+below(largest)
-			height auto
-			padding-y(10px)
-			padding-x(20px)
-
-		&_side-1
-			position fixed
-			left -2px
-			bottom -92px
-			width 100vh
-
-			-webkit-transform-origin: left top;
-			-moz-transform-origin: left top;
-			-ms-transform-origin: left top;
-			-o-transform-origin: left top;
-			transform-origin: left top;
-
-			-webkit-transform: rotate(-90deg);
-			-moz-transform: rotate(-90deg);
-			-ms-transform: rotate(-90deg);
-			-o-transform: rotate(-90deg);
-			transform: rotate(-90deg);
-
-			+below(largest)
-				display none
-
-		&_side-2
-			position fixed
-			right -2px
-			bottom -92px
-			width 100vh
-
-			-webkit-transform-origin: right top;
-			-moz-transform-origin: right top;
-			-ms-transform-origin: right top;
-			-o-transform-origin: right top;
-			transform-origin: right top;
-
-			-webkit-transform: rotate(90deg);
-			-moz-transform: rotate(90deg);
-			-ms-transform: rotate(90deg);
-			-o-transform: rotate(90deg);
-			transform: rotate(90deg);
-
-			+below(largest)
-				display none
-
-		&_bottom
-			position fixed
-			bottom 0
-			padding-x(88px)
-
-			+below(largest)
-				display none
-
-		&_scroller
-			&:before
-				content ""
-				position absolute
-				top -10px
-				left 0
-				right 0
-				margin-x(auto)
-				display block
-				height 12px
-				width 128px
-				background light
-
-		&_scroller-dark
-			&:before
-				background main
-
-	&__section-wrap
+	
+	&__topline
+		z-index 1000
+		position fixed
+		top 0
+		left 0
+		right 0
 		height 92px
-		border-bottom 2px solid border
-
-		+below(largest)
-			height auto
-			border-bottom 0
-
-		&_bottom
-			border-bottom 0
-			border-top 2px solid border
-
-		&_align-center
-			text-align center
-
-	&__nav-wrap
-		display inline-block
-
-	&__mobile-nav
-		height 0
-		margin-top -1px
-		overflow hidden
+		width 100%
+		padding-x(92px)
 		background light
+		border-bottom 2px solid border
+		
+		+below(1600px)
+			height 60px
+			padding-x(60px)
+			
+		+below(1366px)
+			padding-x(35px)
+			
+		+below(1100px)
+			padding-x(15px)
+		
+	&__sideline
+		z-index 1001
+		position fixed
+		top 0
+		left 0
+		height 100vh
+		width 92px
+		padding-y(90px)
+		background light
+		
+		&_2
+			left auto
+			right 0
+			
+		+below(1600px)
+			width 60px
+			padding-y(58px)
+			
+		+below(1366px)
+			display none
 
-		+below(largest)
-			display block
 
-	&__mobile-nav-wrap
-		padding-top 20px
-		padding-bottom 20px
-		border-bottom 1px solid main
-
-
+	&__bottomline
+		z-index 1000
+		position fixed
+		bottom 0
+		left 0
+		right 0
+		height 92px
+		width 100%
+		padding-x(92px)
+		background light
+		border-top 2px solid border
+		
+		+below(1600px)
+			height 60px
+			padding-x(60px)
+			
+		+below(1366px)
+			padding-x(35px)
+			
+		+below(1100px)
+			padding-x(15px)
+		
+	&__sideline-border
+		height 100%
+		width 100%
+		border-right 2px solid border
+		
+		&_2
+			border-right 0
+			border-left 2px solid border
+			
+	&__topline-wrap
+		display table
+		height 100%
+		width 100%
+		table-layout fixed
+		
+	&__topline-block
+		display table-cell
+		width 33.33%
+		clearfix()
+		vertical-align middle
+		
+		&_select
+			
+			+below(1100px)
+				display none
+				
+		&_logo
+			
+			+below(1100px)
+				text-align right
+			
+	&__nav
+		float left
+		margin-right 35px
+		
+	&__links
+		float left
+		
+		+below(1100px)
+			display none
+		
+	&__select
+		float right

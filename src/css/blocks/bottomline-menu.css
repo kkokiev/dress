@@ -1,0 +1,31 @@
+.bottomline-menu {
+  display: table;
+  height: 100%;
+  width: 100%;
+  table-layout: fixed;
+}
+.bottomline-menu > li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.bottomline-menu > li:first-child {
+  padding-left: 0;
+  text-align: left;
+}
+.bottomline-menu > li:last-child {
+  padding-right: 0;
+  text-align: right;
+}
+.bottomline-menu > li > a {
+  color: main;
+  font-size: 22px;
+  line-heigh: 90px;
+  text-decoration: none;
+below(1600px)
+}
+.bottomline-menu > li > a:hover,
+.bottomline-menu > li > a:focus {
+  color: brand;
+}
+/*# sourceMappingURL=src/stylus/blocks/bottomline-menu.css.map */

@@ -1,0 +1,73 @@
+.main-nav-menu
+	display none
+	overflow-y auto
+	z-index 999
+	position fixed
+	top 0
+	left 92px
+	padding-top 92px
+	padding-bottom 92px
+	height 100vh
+	max-height 100vh
+	background #a5948a
+	
+	+below(1600px)
+		left 60px
+		padding-y(60px)
+		
+	+below(1366px)
+		left 0
+		
+	ul
+		display block
+		padding-y(35px)
+		
+		+below(1920px)
+			padding-y(20px)
+			
+		+below(1100px)
+			padding-y(10px)
+		
+		> li
+			display block
+			padding-x(70px)
+			
+			+below(1920px)
+				padding-x(35px)
+				
+			+below(1100px)
+				padding-x(15px)
+			
+			&:hover
+				background brand-dark
+			
+			> a
+				display inline-block
+				width 100%
+				padding-y(12px)
+				color light
+				font-size 26px
+				liine-height 1.2
+				text-decoration none
+				
+				+below(1920px)
+					padding-y(8px)
+					font-size 18px
+				
+		> li.border-bottom
+			
+			> a
+				border-bottom 1px solid light
+				
+		> li.special
+			
+			> a
+				padding-y(6px)
+				font-family font-light
+				font-size 20px
+				font-weight 300
+				letter-spacing 0.05em
+				
+				+below(1920px)
+					padding-y(4px)
+					font-size 16px

@@ -1,0 +1,22 @@
+.topline-menu {
+  position: relative;
+}
+.topline-menu__btn {
+  display: inline-block;
+  height: 24px;
+  width: 32px;
+  text-decoration: none;
+  background: transparent url("images/static/icon-hamburger.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.topline-menu__btn_opened {
+  background: transparent url("images/static/icon-close.png") center 0 no-repeat;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+}
+/*# sourceMappingURL=src/stylus/blocks/topline-menu.css.map */

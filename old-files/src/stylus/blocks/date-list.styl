@@ -1,0 +1,48 @@
+.date-list
+	clearfix()
+
+	> li
+		position relative
+		float left
+		margin-right 4px
+
+		&:after
+			content ""
+			position absolute
+			right -4px
+			bottom 6px
+			display block
+			height 4px
+			width 4px
+			background main
+			border-radius(50%)
+
+		&:last-child
+			&:after
+				display none
+
+		> a
+			display inline-block
+			padding-x(6px)
+			padding-y(3px)
+			color main
+			font-size 22px
+			text-decoration none
+
+			+below(tablet)
+				font-size 16px
+
+			&:hover,
+			&:focus
+				color brand
+
+	> li.active
+
+		> a
+			color light
+			background brand
+
+			&:hover,
+			&:focus
+				color light
+				background brand

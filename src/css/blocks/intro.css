@@ -1,0 +1,32 @@
+.intro {
+  position: relative;
+  display: table;
+  height: 100vh;
+  width: 100%;
+  color: light;
+  background-position: top center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: main;
+}
+.intro__wrap {
+  display: table-cell;
+  vertical-align: middle;
+  background-color: rgba(67,64,64,0.57);
+  padding: 90px;
+below(1400px)
+}
+.intro__wrap_nobg {
+  background-color: transparent;
+}
+.intro__main-title {
+  max-width: 365px;
+below(480px)
+}
+.intro__main-title-img {
+  width: 100%;
+}
+/*# sourceMappingURL=src/stylus/blocks/intro.css.map */

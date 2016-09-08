@@ -4,7 +4,12 @@
 	height 100vh
 	width 100%
 	color light
-	bg-image()
+	background-position top center
+	background-repeat no-repeat
+	-webkit-background-size cover
+	-moz-background-size cover
+	-o-background-size cover
+	background-size cover
 	background-color main
 
 	&__wrap
@@ -13,7 +18,7 @@
 		background-color rgba(#434040, .57) //brand-dark
 		padding 90px
 
-		+below(largest)
+		+below(1400px)
 			padding 20px
 			padding-top 120px
 
@@ -25,9 +30,8 @@
 		max-width 365px
 		margin-x(auto)
 
-		+below(smallest)
+		+below(480px)
 			max-width 320px
 
 	&__main-title-img
 		width 100%
-

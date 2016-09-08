@@ -1,0 +1,32 @@
+.bottomline-menu
+	display table
+	height 100%
+	width 100%
+	table-layout fixed
+	
+	> li
+		display table-cell
+		padding-x(15px)
+		vertical-align middle
+		text-align center
+		
+		&:first-child
+			padding-left 0
+			text-align left
+			
+		&:last-child
+			padding-right 0
+			text-align right
+			
+		> a
+			color main
+			font-size 22px
+			line-heigh 90px
+			text-decoration none
+			
+			&:hover,
+			&:focus
+				color brand
+				
+			+below(1600px)
+				font-size 18px

@@ -1,0 +1,19 @@
+.page {
+  position: relative;
+}
+.page__wrap {
+  padding-bottom: 90px;
+below(1600px)
+below(1366px)
+}
+.page__content-wrap {
+  padding-top: 60px;
+}
+.page__section {
+  margin-bottom: 60px;
+}
+.page__text {
+  color: brand;
+  font-size: 30px;
+}
+/*# sourceMappingURL=src/stylus/blocks/page.css.map */

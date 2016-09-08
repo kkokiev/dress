@@ -1,0 +1,20 @@
+.logo
+	display inline-block
+	width 100%
+	
+	&__img
+		width 100%
+		
+		+below(1100px)
+			display none
+		
+	&__img-mobile
+		display none
+		
+		+below(1100px)
+			display inline-block
+			height 40px
+			
+		+below(768px)
+			height 30px
+			

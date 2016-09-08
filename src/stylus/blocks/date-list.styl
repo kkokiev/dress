@@ -1,6 +1,6 @@
 .date-list
 	clearfix()
-
+	
 	> li
 		position relative
 		float left
@@ -24,17 +24,16 @@
 		> a
 			display inline-block
 			padding-x(6px)
-			padding-y(3px)
 			color main
 			font-size 22px
 			text-decoration none
 
-			+below(tablet)
-				font-size 16px
-
 			&:hover,
 			&:focus
 				color brand
+				
+			+below(1600px)
+				font-size 18px
 
 	> li.active
 
