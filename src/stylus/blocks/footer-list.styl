@@ -1,0 +1,31 @@
+.footer-list
+	
+	ul
+		clearfix()
+		
+		> li
+			float left
+			width 50%
+			margin-bottom 12px
+			padding-right 15px
+			overflow hidden
+			text-overflow ellipsis
+			
+			+below(600px)
+				padding-x(10px)
+				text-align center
+				
+			+below(480px)
+				width 100%
+			
+			&:nth-child(3n)
+				clear both
+				
+			> a
+				color #8c8989
+				font-family 
+				font-size 22px
+				text-decoration none
+				
+				+below(1600px)
+					font-size 18px

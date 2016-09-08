@@ -1,0 +1,24 @@
+.insta-block
+	
+	> .grid
+		margin-x(-13px)
+		
+		+below(1100px)
+			margin-x(-6px)
+
+		> div
+			padding-x(13px)
+			margin-bottom 26px
+			
+			+below(1100px)
+				padding-x(6px)
+				margin-bottom 12px
+				
+			&:last-child
+				+below(480px)
+					margin-bottom 0
+
+	&__item
+		background #e6e6e6
+		
+		

@@ -4,6 +4,7 @@
 	height 100vh
 	width 100%
 	color light
+	background-image: url(images/content/bg-1.jpg)
 	background-position top center
 	background-repeat no-repeat
 	-webkit-background-size cover
@@ -11,16 +12,18 @@
 	-o-background-size cover
 	background-size cover
 	background-color main
+	
+	+below(768px)
+		background-image: url(images/content/bg-1-small.jpg)
 
 	&__wrap
 		display table-cell
 		vertical-align middle
 		background-color rgba(#434040, .57) //brand-dark
-		padding 90px
+		padding-x 90px
 
 		+below(1400px)
 			padding 20px
-			padding-top 120px
 
 
 		&_nobg

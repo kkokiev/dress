@@ -1,50 +1,83 @@
 .footer
 	padding-x(50px)
-	padding-y(30px)
+	padding-top 30px
+	padding-bottom 20px
 	color brand-dark
-	background main
-
+	background #000
 	
-
-	&__links
-
+	+below(1366px)
+		padding-x(35px)
 		
-
-		> .grid
-			display table
-			width 100%
-
+	+below(1100px)
+		padding-x(15px)
+		
+	+below(1100px)
+		padding-y(15px)
+	
+	> .grid
+		display table
+		width 100%
+		table-layout fixed
+		
+		+below(900px)
+			display block
+		
+		> div
+			float none
+			display table-cell
+			vertical-align top
 			
-
-			> div
-				display table-cell
-				float none
+			+below(900px)
+				display block
+				float left
+			
+			&:nth-child(2)
+				padding-bottom 8px
 				vertical-align bottom
-
 				
-	&__list
-		padding-right 15px
-
-		
-
-		> li
+				+below(900px)
+					padding-bottom 0
+					
+	&__lists
+		+below(600px)
 			margin-bottom 10px
 
+	&__copyright
+		float left
+		margin-right 30px
+		
+		+below(1400px)
+			display none
+		
+	&__social
+		float left
+		position relative
+		top -8px
+		
+		+below(1400px)
+			float none
+			top 0
+			text-align center
 			
-
-			&:last-child
-				margin-bottom 0
-
-			> a
-				color brand-dark
-				font-family font-book
-				font-size 22px
-				text-decoration none
-
-				
-
-				&:hover,
-				&:focus
-					color light
-
+		+below(1100px)
+			text-align right
+			
+		+below(600px)
+			text-align center
+		
+	&__sign
+		margin-bottom 12px
+		
+		+below(900px)
+			max-width 600px
+			margin 20px auto 5px
+			
+		
+	&__bottom-copy
+		display none
+		
+		+below(1400px)
+			display block
+			padding-top 15px
+			text-align center
 		

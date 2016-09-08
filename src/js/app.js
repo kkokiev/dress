@@ -84,7 +84,8 @@ if(!(window.console && console.log)) {
 	/**/
 	/*setup navbar show and hide*/
 	/**/
-	var $topMenu = $('#topline-menu');
+	var $topMenu = $('#topline-menu'),
+		$topMenuBtn = $('#topline-menu-btn');
 
 	$body.on('click', '#topline-menu-btn', function (event) {
 		event.preventDefault();
@@ -100,6 +101,22 @@ if(!(window.console && console.log)) {
 		}
 		
 	});
+
+	$body.on('click', function() {
+		if($topMenuBtn.hasClass('topline-menu__btn_opened')) {
+			$topMenuBtn.removeClass('topline-menu__btn_opened');
+			$topMenu.slideUp();
+		}
+	});
+
+	$body.on('click', '#topline-menu, #topline-menu-btn', function (event) {
+		event.stopPropagation();
+	});
+	/**/
+	/*end setup navbar show and hide*/
+	/**/
+
+	
 
 	// var $navBtn = $('#mobile-nav-btn'),
 	// 	$navBar = $('#mobile-nav');
