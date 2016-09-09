@@ -1,0 +1,88 @@
+.media-item {
+  position: relative;
+  margin-bottom: 15px;
+below(600px)
+}
+.media-item__header {
+  margin-bottom: 15px;
+below(600px)
+}
+.media-item__header:hover .media-item__popup {
+  display: block;
+}
+.media-item__popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.media-item__popup a {
+  display: block;
+  text-decoration: none;
+}
+.media-item__popup img {
+  width: 100%;
+}
+.media-item__title_1 {
+  font-family: font;
+  font-size: 60px;
+  line-height: 1;
+below(1919px)
+below(1679px)
+}
+.media-item__title_2 {
+  font-family: font-medium;
+  font-size: 60px;
+  letter-spacing: 0.05em;
+below(1919px)
+below(1679px)
+}
+.media-item__title_3 {
+  font-family: font-medium;
+  font-size: 74px;
+  letter-spacing: 0.05em;
+below(1919px)
+below(1679px)
+}
+.media-item__title_4 {
+  font-family: font-medium;
+  font-size: 90px;
+  letter-spacing: 0.05em;
+below(1919px)
+below(1679px)
+}
+.media-item__title_5 {
+  font-family: font;
+  font-size: 90px;
+  letter-spacing: 0.05em;
+below(1919px)
+below(1679px)
+}
+.media-item__title a {
+  color: #000;
+  text-decoration: none;
+}
+.media-item__body p {
+  font-family: font;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.media-item__body a {
+  display: inline-block;
+  padding-bottom: 4px;
+  color: main;
+  font-family: font-alt;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid main;
+  letter-spacing: 0.05em;
+}
+.media-item__body a:hover,
+.media-item__body a:focus {
+  color: brand;
+  border-bottom: 1px solid brand;
+}
+/*# sourceMappingURL=src/stylus/blocks/media-item.css.map */

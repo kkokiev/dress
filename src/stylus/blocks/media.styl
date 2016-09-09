@@ -1,0 +1,23 @@
+.media
+	padding-y(70px)
+	padding-x(100px)
+	
+	+below(1920px)
+		padding-y(40px)
+		padding-x(30px)
+		
+	+below(768px)
+		padding 25px 20px
+		
+	+below(480px)
+		padding 15px
+		
+	> .grid
+		
+		> div
+			
+			&:nth-child(3n)
+				
+				+below(1100px)
+				
+					clear both

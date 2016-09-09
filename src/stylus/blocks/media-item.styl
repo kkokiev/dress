@@ -1,0 +1,121 @@
+.media-item
+	position relative
+	padding-y(15px)
+	padding-x(22px)
+	margin-bottom 15px
+	
+	+below(600px)
+		padding 5px
+		margin-bottom 10px
+	
+	&__header
+		margin-bottom 15px
+		
+		&:hover
+			
+			.media-item__popup
+				display block
+		
+		+below(600px)
+			margin-bottom 5px
+	
+	&__popup
+		display none
+		position absolute
+		top 0
+		left 0
+		right 0
+
+		a
+			display block
+			text-decoration none
+		
+		img
+			width 100%
+			
+
+	&__title
+		
+		&_1
+			font-family font
+			font-size 60px
+			line-height 1
+			
+			+below(1919px)
+				font-size 45px
+				
+			+below(1679px)
+				font-size 30px
+			
+		&_2
+			font-family font-medium
+			font-size 60px
+			letter-spacing 0.05em
+			
+			+below(1919px)
+				font-size 45px
+				
+			+below(1679px)
+				font-size 30px
+			
+		&_3
+			font-family font-medium
+			font-size 74px
+			letter-spacing 0.05em
+			
+			+below(1919px)
+				font-size 55px
+				
+			+below(1679px)
+				font-size 37px
+			
+		&_4
+			font-family font-medium
+			font-size 90px
+			letter-spacing 0.05em
+			
+			+below(1919px)
+				font-size 67px
+				
+			+below(1679px)
+				font-size 45px
+			
+		&_5
+			font-family font
+			font-size 90px
+			letter-spacing 0.05em
+			
+			+below(1919px)
+				font-size 67px
+				
+			+below(1679px)
+				font-size 45px
+		
+		a
+			color #000
+			text-decoration none
+			
+	&__body
+		
+		p
+			font-family font
+			font-size 13px
+			line-height 1.7
+			
+		a
+			display inline-block
+			padding-bottom 4px
+			color main
+			font-family font-alt
+			font-size 16px
+			font-style italic
+			font-weight 700
+			text-decoration none
+			border-bottom 1px solid main
+			letter-spacing 0.05em
+			
+			&:hover,
+			&:focus
+				color brand
+				border-bottom 1px solid brand
+			
