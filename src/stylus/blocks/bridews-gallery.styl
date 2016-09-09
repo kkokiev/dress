@@ -1,0 +1,42 @@
+.brides-gallery
+	padding-x(80px)
+	
+	+below(1600px)
+		padding-x 30px
+		
+	+below(1366px)
+		padding-x 15px
+	
+	&__header
+		padding-top 45px
+		padding-bottom 10px
+		padding-x(10px)
+		
+		+below(768px)
+			padding-y(20px)
+		
+		h2
+			font-size 14vh
+			text-align center
+			line-height 1.2
+			letter-spacing 0.05em
+			
+			+below(768px)
+				font-size 50px
+				
+			+below(480px)
+				font-size 30px
+				
+	&__body
+		
+		> .grid
+			
+			> div
+				
+				&:nth-child(4n)
+					+below(900px)
+						clear both
+						
+					+below(480px)
+						clear none
+						

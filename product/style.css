@@ -2887,6 +2887,74 @@ img {
     font-size: 18px;
   }
 }
+.brides-item {
+  padding: 10px;
+}
+@media only screen and (max-width: 1100px) {
+  .brides-item {
+    padding: 5px;
+  }
+}
+.brides-item >a {
+  display: inline-block;
+}
+.brides-item >a > img {
+  width: 100%;
+}
+.brides-gallery {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+@media only screen and (max-width: 1600px) {
+  .brides-gallery {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .brides-gallery {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.brides-gallery__header {
+  padding-top: 45px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .brides-gallery__header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+.brides-gallery__header h2 {
+  font-size: 14vh;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+@media only screen and (max-width: 768px) {
+  .brides-gallery__header h2 {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .brides-gallery__header h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .brides-gallery__body > .grid > div:nth-child(4n) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .brides-gallery__body > .grid > div:nth-child(4n) {
+    clear: none;
+  }
+}
 .copyright {
   font-size: 15px;
   font-family: 'geomanist-regular-webfont', Arial, sans-serif;
@@ -3918,6 +3986,9 @@ font-family
   .media-item__title_5 {
     font-size: 45px;
   }
+}
+.media-item__title:hover a {
+  color: #9f9389;
 }
 .media-item__title a {
   color: #000;

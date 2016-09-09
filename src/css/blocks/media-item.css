@@ -59,6 +59,9 @@ below(1679px)
 below(1919px)
 below(1679px)
 }
+.media-item__title:hover a {
+  color: brand;
+}
 .media-item__title a {
   color: #000;
   text-decoration: none;

@@ -117,12 +117,17 @@ if(!(window.console && console.log)) {
 	/**/
 
 	
-
+	/*setup gallery items*/
 	$('.gallery-item__preview').fancybox({
 		closeBtn: false,
 		padding: 0
 	});
 
+	/*setup real brides gallery*/
+	$('.brides-item__preview').fancybox({
+		closeBtn: true,
+		padding: 0
+	});
 
 
 	// var $navBtn = $('#mobile-nav-btn'),
