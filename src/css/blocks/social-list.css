@@ -17,24 +17,24 @@ below(600px)
 below(768px)
 }
 .social-list__insta {
-  background-image: url("images/static/icon-instagram.png");
+  background-image: url("images/icon-instagram.png");
 }
 .social-list__insta:hover,
 .social-list__insta:focus {
-  background-image: url("images/static/icon-instagram-light.png");
+  background-image: url("images/icon-instagram-light.png");
 }
 .social-list__pinterest {
-  background-image: url("images/static/icon-pinterest.png");
+  background-image: url("images/icon-pinterest.png");
 }
 .social-list__pinterest:hover,
 .social-list__pinterest:focus {
-  background-image: url("images/static/icon-pinterest-light.png");
+  background-image: url("images/icon-pinterest-light.png");
 }
 .social-list__facebook {
-  background-image: url("images/static/icon-facebook.png");
+  background-image: url("images/icon-facebook.png");
 }
 .social-list__facebook:hover,
 .social-list__facebook:focus {
-  background-image: url("images/static/icon-facebook-light.png");
+  background-image: url("images/icon-facebook-light.png");
 }
 /*# sourceMappingURL=src/stylus/blocks/social-list.css.map */

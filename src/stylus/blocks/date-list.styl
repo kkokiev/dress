@@ -9,8 +9,10 @@
 		&:after
 			content ""
 			position absolute
+			top 0
+			bottom 0
 			right -4px
-			bottom 6px
+			margin-y(auto)
 			display block
 			height 4px
 			width 4px
@@ -26,7 +28,7 @@
 			padding-x(6px)
 			color main
 			font-size 22px
-			line-height 1.2
+			line-height 90px
 			text-decoration none
 
 			&:hover,
@@ -35,6 +37,7 @@
 				
 			+below(1600px)
 				font-size 18px
+				line-height 60px
 
 	> li.active
 

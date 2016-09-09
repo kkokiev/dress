@@ -118,6 +118,13 @@ if(!(window.console && console.log)) {
 
 	
 
+	$('.gallery-item__preview').fancybox({
+		closeBtn: false,
+		padding: 0
+	});
+
+
+
 	// var $navBtn = $('#mobile-nav-btn'),
 	// 	$navBar = $('#mobile-nav');
 

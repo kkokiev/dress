@@ -1,6 +1,11 @@
 .page
 	position relative
-
+	min-height 100vh
+	
+	&_dark_bg
+		background #010101
+	
+	// wrapper without top padding
 	&__wrap
 		padding-x(90px)
 		padding-bottom 90px
@@ -11,7 +16,24 @@
 			
 		+below(1366px)
 			padding-x(0)
-
+			
+		+below(480px)
+			padding-bottom 0
+			
+	// wrapper with top padding
+	&__page-wrap
+		padding 90px
+		
+		+below(1600px)
+			padding 60px
+		
+		+below(1366px)
+			padding-x(0)
+			
+		+below(480px)
+			padding-bottom 0
+	
+	//inner wrap
 	&__content-wrap
 		padding-top 60px
 		padding-x(50px)
@@ -19,6 +41,8 @@
 		+below(1400px)
 			padding-top 20px
 			padding-x(15px)
+	
+
 
 	&__section
 		margin-bottom 60px

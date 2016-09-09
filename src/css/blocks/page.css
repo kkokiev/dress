@@ -1,10 +1,21 @@
 .page {
   position: relative;
+  min-height: 100vh;
+}
+.page_dark_bg {
+  background: #010101;
 }
 .page__wrap {
   padding-bottom: 90px;
 below(1600px)
 below(1366px)
+below(480px)
+}
+.page__page-wrap {
+  padding: 90px;
+below(1600px)
+below(1366px)
+below(480px)
 }
 .page__content-wrap {
   padding-top: 60px;
