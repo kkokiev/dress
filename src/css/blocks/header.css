@@ -1,0 +1,77 @@
+.header__topline {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 92px;
+  width: 100%;
+  background: light;
+  border-bottom: 2px solid border;
+below(1600px)
+below(1366px)
+below(1100px)
+}
+.header__sideline {
+  z-index: 1001;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 92px;
+below(1600px)
+below(1366px)
+}
+.header__sideline_2 {
+  left: auto;
+  right: 0;
+}
+.header__bottomline {
+  z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 92px;
+  width: 100%;
+  background: light;
+  border-top: 2px solid border;
+below(1600px)
+below(1366px)
+below(480px)
+}
+.header__sideline-border {
+  height: 100%;
+  width: 100%;
+  background: light;
+  border-right: 2px solid border;
+}
+.header__sideline-border_2 {
+  border-right: 0;
+  border-left: 2px solid border;
+}
+.header__topline-wrap {
+  display: table;
+  height: 100%;
+  width: 100%;
+  table-layout: fixed;
+}
+.header__topline-block {
+  display: table-cell;
+  width: 33.33%;
+  vertical-align: middle;
+}
+.header__nav {
+  float: left;
+  height: 90px;
+  margin-right: 35px;
+below(1600px)
+}
+.header__links {
+  float: left;
+below(1100px)
+}
+.header__select {
+  float: right;
+}
+/*# sourceMappingURL=src/stylus/blocks/header.css.map */

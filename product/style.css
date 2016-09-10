@@ -2951,12 +2951,12 @@ img {
 }
 .bottomline-menu > li.active > a {
   color: #fff;
-  background: #9f9389;
+  background: #a59289;
 }
 .bottomline-menu > li.active > a:hover,
 .bottomline-menu > li.active > a:focus {
   color: #fff;
-  background: #9f9389;
+  background: #a59289;
 }
 .brides-gallery {
   padding-left: 80px;
@@ -3059,6 +3059,9 @@ img {
     padding-right: 20px;
   }
 }
+.contact > .grid > div:last-child {
+  margin-bottom: 0;
+}
 .contact__input-grp-wrap {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -3067,6 +3070,14 @@ img {
 @media only screen and (max-width: 1400px) {
   .contact__input-grp-wrap {
     border-bottom: 2px solid #fff;
+  }
+}
+.contact__input-grp-wrap_margin-b {
+  margin-bottom: 35px;
+}
+@media only screen and (max-width: 1400px) {
+  .contact__input-grp-wrap_margin-b {
+    margin-bottom: 0;
   }
 }
 .contact__label {
@@ -3132,6 +3143,12 @@ img {
   padding-bottom: 20px;
   text-align: right;
   border-bottom: 1px solid #fff;
+}
+@media only screen and (max-width: 1400px) {
+  .contact__submit-wrap {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+  }
 }
 .contact__submit {
   display: inline-block;
@@ -3684,8 +3701,8 @@ font-family
 @media only screen and (max-width: 1600px) {
   .header__nav {
     height: 60px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 }
 .header__links {

@@ -20,6 +20,10 @@
 				
 			+below(768px)
 				padding-x(20px)
+				
+			&:last-child
+				margin-bottom 0
+				
 			
 	&__input-grp-wrap
 		padding-y(5px)
@@ -27,6 +31,12 @@
 		
 		+below(1400px)
 			border-bottom 2px solid light
+			
+		&_margin-b
+			margin-bottom 35px
+			
+			+below(1400px)
+				margin-bottom 0
 
 	&__label
 		float left
@@ -83,6 +93,10 @@
 		padding-bottom 20px
 		text-align right
 		border-bottom 1px solid light
+		
+		+below(1400px)
+			padding-bottom 10px
+			border-bottom 2px solid light
 		
 	&__submit
 		display inline-block
