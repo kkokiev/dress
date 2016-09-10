@@ -2843,6 +2843,64 @@ img {
 .fancybox-inner {
   overflow: hidden !important;
 }
+.about {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 180px;
+  padding-right: 180px;
+  color: #fff;
+  font-size: 40px;
+  line-height: 1.2;
+  font-family: 'geomanistbook', Arial, sans-serif;
+  letter-spacing: 0em;
+}
+@media only screen and (max-width: 1600px) {
+  .about {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .about {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .about {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .about {
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+}
+.about:after {
+  position: absolute;
+  bottom: 0;
+  left: auto;
+  right: 180px;
+  content: '';
+  display: block;
+  height: 5px;
+  width: 140px;
+  background: #fff;
+}
+@media only screen and (max-width: 900px) {
+  .about:after {
+    right: 40px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .about:after {
+    height: 2px;
+    width: 70px;
+  }
+}
 .body {
   position: relative;
   color: #262424;
@@ -3901,8 +3959,8 @@ font-family
   .main-nav-menu-select {
     display: block;
     padding-top: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
     max-width: 100%;
     overflow: hidden;
   }
@@ -3996,8 +4054,8 @@ font-family
 }
 @media only screen and (max-width: 1100px) {
   .main-nav-menu ul > li {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 .main-nav-menu ul > li:hover {

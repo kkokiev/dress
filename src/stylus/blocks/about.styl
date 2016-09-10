@@ -1,0 +1,41 @@
+.about
+	position relative
+	padding-y(50px)
+	padding-x(180px)
+	color light
+	font-size 40px
+	line-height 1.2
+	font-family font-book
+	letter-spacing 0em
+	
+	+below(1600px)
+		font-size 30px
+		
+	+below(900px)
+		padding-y(40px)
+		padding-x(40px)
+		
+	+below(900px)
+		font-size 24px
+		
+	+below(480px)
+		margin-bottom 40px
+		font-size 18px
+	
+	&:after
+		position absolute
+		bottom 0
+		left auto
+		right 180px
+		content ''
+		display block
+		height 5px
+		width 140px
+		background light
+		
+		+below(900px)
+			right 40px
+			
+		+below(480px)
+			height 2px
+			width 70px

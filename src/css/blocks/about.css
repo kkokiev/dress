@@ -1,0 +1,26 @@
+.about {
+  position: relative;
+  color: light;
+  font-size: 40px;
+  line-height: 1.2;
+  font-family: font-book;
+  letter-spacing: 0em;
+below(1600px)
+below(900px)
+below(900px)
+below(480px)
+}
+.about:after {
+  position: absolute;
+  bottom: 0;
+  left: auto;
+  right: 180px;
+  content: '';
+  display: block;
+  height: 5px;
+  width: 140px;
+  background: light;
+below(900px)
+below(480px)
+}
+/*# sourceMappingURL=src/stylus/blocks/about.css.map */
