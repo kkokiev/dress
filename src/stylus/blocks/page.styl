@@ -32,6 +32,28 @@
 			
 		+below(480px)
 			padding-bottom 0
+			
+	&__vertical-centering-wrap
+		position relative
+		display table
+		min-height 100vh
+		width 100%
+		padding 90px
+		
+		+below(1600px)
+			padding 60px
+		
+		+below(1366px)
+			padding-x(0)
+			
+		+below(480px)
+			padding-bottom 0
+		
+	&__vertical-centering-inner-wrap
+		display table-cell
+		height 100%
+		vertical-align middle
+		bg-image()
 	
 	//inner wrap
 	&__content-wrap

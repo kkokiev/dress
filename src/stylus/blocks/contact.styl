@@ -1,0 +1,126 @@
+.contact
+	width 100%
+	max-width 1050px
+	margin-x(auto)
+	padding-y(50px)
+	color light
+	
+	+below(1400px)
+		padding-y(20px)
+	
+	> .grid
+		
+		> div
+			padding-x(75px)
+			margin-bottom 30px
+			
+			+below(1400px)
+				padding-x(30px)
+				margin-bottom 10px
+				
+			+below(768px)
+				padding-x(20px)
+			
+	&__input-grp-wrap
+		padding-y(5px)
+		border-bottom 5px solid light
+		
+		+below(1400px)
+			border-bottom 2px solid light
+
+	&__label
+		float left
+		font-size 30px
+		line-height 1.2
+		letter-spacing 0.07em
+		
+		+below(1400px)
+			font-size 20px
+		
+	&__input-wrap
+		overflow hidden
+		
+	&__input
+		display block
+		width 100%
+		padding-x(10px)
+		color light
+		font-size 24px
+		line-height 1.7
+		font-family font-alt
+		font-style italic
+		font-weight 600
+		letter-spacing 0.04em
+		background transparent
+		border none
+		
+		+below(1400px)
+			font-size 16px
+		
+	&__textarea-wrap
+		padding-y(15px)
+		
+	&__textarea
+		display block
+		height 7em
+		width 100%
+		padding 5px 10px
+		color light
+		font-size 24px
+		line-height 1.2
+		font-family font-alt
+		font-style italic
+		font-weight 600
+		letter-spacing 0.04em
+		background transparent
+		border 5px solid light
+		
+		+below(1400px)
+			font-size 16px
+			border 2px solid light
+		
+	&__submit-wrap
+		padding-bottom 20px
+		text-align right
+		border-bottom 1px solid light
+		
+	&__submit
+		display inline-block
+		max-width 100%
+		overflow hidden
+		text-overflow ellipsis
+		padding-x(18px)
+		background light
+		border none
+		tr(.3s)
+		line-height 40px
+		letter-spacing 0.055
+		
+		+below(1400px)
+			font-size 16px
+			line-height 1.5em
+		
+		&:hover,
+		&:focus
+			background brand
+			border none
+			
+	&__info-wrap
+		font-family font-book
+		font-size 22px
+		line-height 1.2em
+		letter-spacing 0.02em
+		
+		+below(1400px)
+			font-size 16px
+		
+		p
+			margin-bottom .5em
+			
+		a
+			color inherit
+			text-decoration none
+			
+			&:hover,
+			&:focus
+				color brand

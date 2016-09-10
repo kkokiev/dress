@@ -19,9 +19,11 @@
 			text-align right
 			
 		> a
+			display inline-block
+			padding-x(5px)
 			color main
 			font-size 22px
-			line-heigh 90px
+			line-height 90px
 			text-decoration none
 			
 			&:hover,
@@ -30,3 +32,16 @@
 				
 			+below(1600px)
 				font-size 18px
+				line-height 60px
+				
+
+	> li.active
+		
+		> a
+			color light
+			background brand
+
+			&:hover,
+			&:focus
+				color light
+				background brand

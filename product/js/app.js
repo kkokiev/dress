@@ -14,7 +14,11 @@ if(!(window.console && console.log)) {
 
 
 (function () {
-	var $body = $('body');
+	var $body = $('body'),
+		$topMenu = $('#topline-menu'),
+		$topMenuBtn = $('#topline-menu-btn');
+
+		
 
 	/**/
 	/*setup custom language select (header topline)*/
@@ -84,8 +88,6 @@ if(!(window.console && console.log)) {
 	/**/
 	/*setup navbar show and hide*/
 	/**/
-	var $topMenu = $('#topline-menu'),
-		$topMenuBtn = $('#topline-menu-btn');
 
 	$body.on('click', '#topline-menu-btn', function (event) {
 		event.preventDefault();
@@ -130,36 +132,7 @@ if(!(window.console && console.log)) {
 	});
 
 
-	// var $navBtn = $('#mobile-nav-btn'),
-	// 	$navBar = $('#mobile-nav');
-
-	// function hideNavbar() {
-	// 	$navBar.removeClass('js-navbar').animate({height: '0'}, 300);
-	// };
-
-	// $navBtn.on('click', function(event) {
-	// 	event.preventDefault();
-
-	// 	if($navBar.hasClass('js-navbar')){
-	// 		hideNavbar();
-
-	// 	} else {
-	// 		$navBar.addClass('js-navbar');
-	// 		var curHeight = $navBar.height();
-	// 		$navBar.css('height', 'auto');
-	// 		var autoHeight = $navBar.height();
-	// 		$navBar.height(curHeight).animate({height: autoHeight}, 300);
-	// 	}
-	// });
-
-	// $('.header').on('click', function(event) {
-	// 	event.stopPropagation();
-	// });
-
-	// $('body').on('click', function() {
-	// 	hideNavbar();
-	// });
-	/*end setup navbar show and hide*/
+	
 
 
 
