@@ -2932,12 +2932,16 @@ img {
 }
 .bottomline-menu > li > a {
   display: inline-block;
+  max-width: 100%;
   padding-left: 5px;
   padding-right: 5px;
   color: #262424;
   font-size: 22px;
   line-height: 90px;
   text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .bottomline-menu > li > a:hover,
 .bottomline-menu > li > a:focus {
@@ -4706,5 +4710,27 @@ font-family
   -moz-background-size: auto 100%;
   -o-background-size: auto 100%;
   background-size: auto 100%;
+}
+.trunk-book-after {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #fff;
+  font-size: 20vh;
+  line-height: 1.2em;
+  font-family: 'geomanist-bold-webfont', Arial, sans-serif;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+@media only screen and (max-width: 1100px) {
+  .trunk-book-after {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 10vh;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .trunk-book-after {
+    font-size: 40px;
+  }
 }
 /*# sourceMappingURL=src/stylus/style.css.map */
