@@ -3030,6 +3030,33 @@ img {
 .brides-item >a > img {
   width: 100%;
 }
+.btn {
+  display: inline-block;
+  max-width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: #000;
+  font-size: 15px;
+  line-height: 26px;
+  font-family: 'geomanist-bold-webfont', Arial, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid #262424;
+}
+@media only screen and (max-width: 480px) {
+  .btn {
+    font-size: 13px;
+  }
+}
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  border: 1px solid #9f9389;
+  background: #9f9389;
+}
 .contact {
   width: 100%;
   max-width: 1050px;
@@ -3106,7 +3133,7 @@ img {
   color: #fff;
   font-size: 24px;
   line-height: 1.7;
-  font-family: 'garamond_premr_pro', 'geomanist-medium-webfont', Arial, sans-serif;
+  font-family: 'garamond_premr_pro', 'geomanist-regular-webfont', Arial, sans-serif;
   font-style: italic;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -3130,7 +3157,7 @@ img {
   color: #fff;
   font-size: 24px;
   line-height: 1.2;
-  font-family: 'garamond_premr_pro', 'geomanist-medium-webfont', Arial, sans-serif;
+  font-family: 'garamond_premr_pro', 'geomanist-regular-webfont', Arial, sans-serif;
   font-style: italic;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -4050,7 +4077,7 @@ font-family
   padding-top: 35px;
   padding-bottom: 35px;
 }
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1919px) {
   .main-nav-menu ul {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -4092,7 +4119,7 @@ font-family
   line-height: 1.2;
   text-decoration: none;
 }
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1919px) {
   .main-nav-menu ul > li > a {
     padding-top: 6px;
     padding-bottom: 6px;
@@ -4110,7 +4137,7 @@ font-family
   font-weight: 300;
   letter-spacing: 0.05em;
 }
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1919px) {
   .main-nav-menu ul > li.special > a {
     padding-top: 2px;
     padding-bottom: 2px;
@@ -4247,7 +4274,7 @@ font-family
   display: inline-block;
   padding-bottom: 4px;
   color: #262424;
-  font-family: 'garamond_premr_pro', 'geomanist-medium-webfont', Arial, sans-serif;
+  font-family: 'garamond_premr_pro', 'geomanist-regular-webfont', Arial, sans-serif;
   font-size: 16px;
   font-style: italic;
   font-weight: 700;
@@ -4453,6 +4480,201 @@ font-family
 #select2-select-language-results .select2-results__option--highlighted[aria-selected] {
   background: #959191;
 }
+.show-item__img {
+  height: 0;
+  padding-bottom: 82%;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.show-item__img_alt {
+  padding-bottom: 100%;
+}
+.show-item__btn-wrap {
+  padding: 20px;
+  text-align: center;
+}
+@media only screen and (max-width: 1100px) {
+  .show-item__btn-wrap {
+    padding: 10px;
+  }
+}
+.show-item__info-wrap p {
+  font-size: 17px;
+  font-family: 'geomanistbook', Arial, sans-serif;
+  line-height: 1.2;
+}
+@media only screen and (max-width: 1100px) {
+  .show-item__info-wrap p {
+    font-size: 15px;
+  }
+}
+.show-item__info-wrap a {
+  color: #000;
+  text-decoration: none;
+}
+.show-item__info-wrap a:hover,
+.show-item__info-wrap a:focus {
+  color: #9f9389;
+}
+.show-item__info-wrap a b,
+.show-item__info-wrap a strong {
+  font-weight: bold;
+}
+.show-item__info-wrap-grid {
+  padding-bottom: 20px;
+}
+.show-item__info-wrap-grid > .grid {
+  display: table;
+  width: 100%;
+  table-layot: fixed;
+}
+.show-item__info-wrap-grid > .grid > div {
+  float: none;
+  display: table-cell;
+  vertical-align: top;
+}
+.show-item__info-wrap-grid > .grid > div:first-child {
+  padding-right: 15px;
+}
+.show-item__info-wrap-grid > .grid > div:nth-child(2) {
+  text-align: right;
+}
+.show-item__big-text {
+  display: block;
+  font-size: 25px;
+  line-height: 1.2;
+  font-family: 'geomanist-bold-webfont', Arial, sans-serif;
+}
+@media only screen and (max-width: 1100px) {
+  .show-item__big-text {
+    font-size: 18px;
+  }
+}
+.show-item__info-section {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+@media only screen and (max-width: 1919px) {
+  .show-item__info-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .show-item__info-section {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.show-item__info-row {
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 480px) {
+  .show-item__info-row {
+    margin-bottom: 5px;
+  }
+}
+.show-wrap {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+@media only screen and (max-width: 1919px) {
+  .show-wrap {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .show-wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.show-wrap__header {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+@media only screen and (max-width: 1100px) {
+  .show-wrap__header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+}
+.show-wrap__header h2 {
+  font-size: 100px;
+  line-height: 1.2;
+  text-align: center;
+}
+@media only screen and (max-width: 1400px) {
+  .show-wrap__header h2 {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .show-wrap__header h2 {
+    font-size: 40px;
+  }
+}
+.show-wrap__body > .grid > div:first-child {
+  padding-right: 70px;
+}
+@media only screen and (max-width: 1919px) {
+  .show-wrap__body > .grid > div:first-child {
+    padding-right: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .show-wrap__body > .grid > div:first-child {
+    padding-right: 0;
+  }
+}
+.show-wrap__body > .grid > div:nth-child(2) {
+  padding-left: 70px;
+}
+@media only screen and (max-width: 1919px) {
+  .show-wrap__body > .grid > div:nth-child(2) {
+    padding-left: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .show-wrap__body > .grid > div:nth-child(2) {
+    padding-left: 0;
+  }
+}
+.show-wrap__body-title {
+  padding-bottom: 20px;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+@media only screen and (max-width: 1100px) {
+  .show-wrap__body-title {
+    padding-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .show-wrap__body-title {
+    padding-top: 15px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .show-wrap__small-items-grid > div {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .show-wrap__small-items-grid > div {
+    margin-bottom: 15px;
+  }
+}
+.show-wrap__small-items-grid > div:nth-child(3n) {
+  clear: both;
+}
 .sign > .grid {
   display: table;
   width: 100%;
@@ -4536,7 +4758,7 @@ font-family
   padding-left: 15px;
   padding-right: 15px;
   color: #959191;
-  font-family: 'garamond_premr_pro', 'geomanist-medium-webfont', Arial, sans-serif;
+  font-family: 'garamond_premr_pro', 'geomanist-regular-webfont', Arial, sans-serif;
   font-size: 17px;
   border: 1px solid #959191;
   background: transparent;

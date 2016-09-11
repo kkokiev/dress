@@ -1,0 +1,76 @@
+.show-wrap
+	padding-x(80px)
+	
+	+below(1919px)
+		padding-x(40px)
+		
+	+below(600px)
+		padding-x(15px)
+	
+	&__header
+		padding-top 50px
+		padding-bottom 30px
+		
+		+below(1100px)
+			padding-top 20px
+			padding-bottom 10px
+		
+		h2
+			font-size 100px
+			line-height 1.2
+			text-align center
+			
+			+below(1400px)
+				font-size 60px
+				
+			+below(600px)
+				font-size 40px
+			
+	&__body
+		
+		> .grid
+			
+			> div
+				
+				&:first-child
+					padding-right 70px
+					
+					+below(1919px)
+						padding-right 40px
+						
+					+below(768px)
+						padding-right 0
+					
+				&:nth-child(2)
+					padding-left 70px
+					
+					+below(1919px)
+						padding-left 40px
+						
+					+below(768px)
+						padding-left 0
+						
+	&__body-title
+		padding-bottom 20px
+		font-size 22px
+		line-height 1.2
+		letter-spacing 0.05em
+		
+		+below(1100px)
+			padding-bottom 5px
+			
+		+below(768px)
+			padding-top 15px
+		
+	&__small-items-grid
+		
+		> div
+			
+			+below(1400px)
+				margin-bottom 30px
+				
+			+below(768px)
+				margin-bottom 15px
+			
+			&:nth-child(3n)
+				clear both

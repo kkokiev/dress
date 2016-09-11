@@ -1,0 +1,34 @@
+.show-wrap__header {
+  padding-top: 50px;
+  padding-bottom: 30px;
+below(1100px)
+}
+.show-wrap__header h2 {
+  font-size: 100px;
+  line-height: 1.2;
+  text-align: center;
+below(1400px)
+below(600px)
+}
+.show-wrap__body > .grid > div:first-child {
+  padding-right: 70px;
+below(1919px)
+below(768px)
+}
+.show-wrap__body > .grid > div:nth-child(2) {
+  padding-left: 70px;
+below(1919px)
+below(768px)
+}
+.show-wrap__body-title {
+  padding-bottom: 20px;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+below(1100px)
+below(768px)
+}
+.show-wrap__small-items-grid > div:nth-child(3n) {
+  clear: both;
+}
+/*# sourceMappingURL=src/stylus/blocks/show-wrap.css.map */

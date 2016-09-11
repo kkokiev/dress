@@ -1,0 +1,21 @@
+.btn
+	display inline-block
+	max-width 100%
+	padding-x(12px)
+	color #000
+	font-size 15px
+	line-height 26px
+	font-family font-bold
+	text-decoration none
+	text-transform uppercase
+	single-line()
+	border 1px solid main
+	
+	+below(480px)
+		font-size 13px
+	
+	&:hover,
+	&:focus
+		color light
+		border 1px solid brand
+		background brand

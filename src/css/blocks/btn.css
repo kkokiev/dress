@@ -1,0 +1,19 @@
+.btn {
+  display: inline-block;
+  max-width: 100%;
+  color: #000;
+  font-size: 15px;
+  line-height: 26px;
+  font-family: font-bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid main;
+below(480px)
+}
+.btn:hover,
+.btn:focus {
+  color: light;
+  border: 1px solid brand;
+  background: brand;
+}
+/*# sourceMappingURL=src/stylus/blocks/btn.css.map */

@@ -1,0 +1,82 @@
+.show-item
+	
+	&__img
+		height 0
+		padding-bottom 82%
+		bg-image()
+		
+		&_alt
+			padding-bottom 100%
+		
+	&__btn-wrap
+		padding 20px
+		text-align center
+		
+		+below(1100px)
+			padding 10px
+		
+	&__info-wrap
+		
+		p
+			font-size 17px
+			font-family font-book
+			line-height 1.2
+			
+			+below(1100px)
+				font-size 15px
+			
+		a
+			color #000
+			text-decoration none
+			
+			&:hover,
+			&:focus
+				color brand
+			
+			b,
+			strong
+				font-weight bold
+		
+	&__info-wrap-grid
+		padding-bottom 20px
+		
+		> .grid
+			display table
+			width 100%
+			table-layot fixed
+			
+			> div
+				float none
+				display table-cell
+				vertical-align top
+				
+				&:first-child
+					padding-right 15px
+				
+				&:nth-child(2)
+					text-align right
+					
+	&__big-text
+		display block
+		font-size 25px
+		line-height 1.2
+		font-family font-bold
+		
+		+below(1100px)
+			font-size 18px
+			
+		
+	&__info-section
+		padding-x(25px)
+		
+		+below(1919px)
+			padding-x(15px)
+			
+		+below(480px)
+			padding-x(5px)
+			
+	&__info-row
+		margin-bottom 20px
+		
+		+below(480px)
+			margin-bottom 5px
