@@ -42,7 +42,7 @@ if(!(window.console && console.log)) {
 	/**/
 	/*setup custom country select (stores page)*/
 	/**/
-	$("#select-country").select2({
+	$("#stores-select").select2({
 		placeholder: 'Choose your country',
 		minimumResultsForSearch: Infinity, //hide search
 		closeOnSelect: true

@@ -1,0 +1,165 @@
+.stores
+	padding-y(40px)
+	padding-x(75px)
+	
+	+below(1919px)
+		padding-x(10px)
+		
+	+below(1919px)
+		padding-x(15px)
+		
+	+below(768px)
+		padding-y(20px)
+	
+
+	&__row
+		color light
+		
+		a
+			color light
+			
+			&:hover,
+			&:focus
+				color brand
+				
+		.stores__item-name
+			color #c7c8ca
+			
+	&__select-label-wrap,
+	&__title-wrap
+		padding-x(65px)
+		text-align right
+		
+		+below(1400px)
+			padding-left 0
+			padding-right 30px
+		
+		+below(1100px)
+			padding-x(0)
+			padding-bottom 20px
+			text-align left
+			
+		+below(480px)
+			padding-top 10px
+			padding-bottom 10px
+			text-align center
+			
+	&__select-label
+		font-family font
+		letter-spacing 0.035em
+		
+	&__select-wrap
+		padding-bottom 50px
+		
+		+below(1100px)
+			padding-bottom 20px
+		
+	&__title
+		font-size 70px
+		line-height 1
+		
+		+below(1919px)
+			font-size 50px
+			
+		+below(1400px)
+			font-size 40px
+			
+		
+	&__title-img-wrap
+		width 75px
+		padding-top 20px
+		margin-left auto
+		
+		+below(1100px)
+			display none
+		
+		img
+			width 100%
+			
+			&:nth-child(2)
+				display none
+				
+	&__subtitle
+		position relative
+		margin-bottom 25px
+		padding-top 5px
+		padding-bottom 15px
+		
+		+below(480px)
+			text-align center
+		
+		&:after
+			position absolute
+			left 0
+			bottom 0
+			content ''
+			display block
+			height 5px
+			width 200px
+			background light
+			
+			+below(480px)
+				height 2px
+				width 100%
+			
+		h3
+			font-size 20px
+			line-height 1.2
+			
+	&__body-wrap
+		> .grid
+			
+			> div
+				&:nth-child(4n)
+					clear both
+					
+					+below(768px)
+						clear none
+						
+				&:nth-child(3n)
+					
+					+below(768px)
+						clear both
+	
+	&__item
+		padding-right 100px
+		padding-bottom 10px
+		margin-bottom 20px
+		
+		+below(1919px)
+			padding-right 40px
+			
+		+below(1100px)
+			padding-right 25px
+			
+		+below(480px)
+			padding-x(0)
+			text-align center
+		
+		p
+			margin-bottom 8px
+			font-family font-book
+			font-size 18px
+			line-height 1.2
+			
+			+below(480px)
+				font-size 14px
+			
+			&:last-child
+				margin-bottom 0
+			
+			a
+				text-decoration none
+
+	&__item-name
+		display block
+		margin-bottom 15px
+		font-size 18px
+		font-family font-alt
+		font-style italic
+		text-decoration none
+		letter-spacing 0.035em
+		
+		+below(480px)
+			margin-bottom 10px
+			font-size 22px

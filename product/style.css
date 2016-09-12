@@ -185,8 +185,8 @@ table {
   font-style: normal;
 }
 @font-face {
-  font-family: 'garamond_premr_pro';
-  src: url("fonts/GaramondPremrPro.otf") format('opentype');
+  font-family: 'garamond_premr_pro_smb-it';
+  src: url("fonts/GaramondPremrPro-SmbdIt.otf") format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -3133,7 +3133,7 @@ img {
   color: #fff;
   font-size: 24px;
   line-height: 1.7;
-  font-family: 'garamond_premr_pro', 'geomanist-regular-webfont', Arial, sans-serif;
+  font-family: 'garamond_premr_pro_smb-it', 'geomanist-regular-webfont', Arial, sans-serif;
   font-style: italic;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -3157,7 +3157,7 @@ img {
   color: #fff;
   font-size: 24px;
   line-height: 1.2;
-  font-family: 'garamond_premr_pro', 'geomanist-regular-webfont', Arial, sans-serif;
+  font-family: 'garamond_premr_pro_smb-it', 'geomanist-regular-webfont', Arial, sans-serif;
   font-style: italic;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -4274,7 +4274,7 @@ font-family
   display: inline-block;
   padding-bottom: 4px;
   color: #262424;
-  font-family: 'garamond_premr_pro', 'geomanist-regular-webfont', Arial, sans-serif;
+  font-family: 'garamond_premr_pro_smb-it', 'geomanist-regular-webfont', Arial, sans-serif;
   font-size: 16px;
   font-style: italic;
   font-weight: 700;
@@ -4758,7 +4758,7 @@ font-family
   padding-left: 15px;
   padding-right: 15px;
   color: #959191;
-  font-family: 'garamond_premr_pro', 'geomanist-regular-webfont', Arial, sans-serif;
+  font-family: 'garamond_premr_pro_smb-it', 'geomanist-regular-webfont', Arial, sans-serif;
   font-size: 17px;
   border: 1px solid #959191;
   background: transparent;
@@ -4893,6 +4893,271 @@ font-family
 }
 .special-text p:last-child {
   margin-bottom: 0;
+}
+.stores-select {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'geomanist-light-webfont', Arial, sans-serif;
+}
+@media only screen and (max-width: 480px) {
+  .stores-select {
+    text-align: center;
+  }
+}
+.stores-select select {
+  width: 200px;
+}
+.stores-select .select2 {
+  text-align: left;
+}
+.stores-select .select2-container--default .select2-selection--single {
+  background-color: #010101;
+  border: 1px solid #fff;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.stores-select .select2-container .select2-selection--single {
+  height: 34px;
+}
+.stores-select .select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #fff;
+  line-height: 32px;
+}
+.stores-select .select2-container--default .select2-selection--single .select2-selection__placeholder {
+  color: #fff;
+}
+.stores-select .select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 32px;
+}
+.stores-select .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: #fff transparent transparent transparent;
+}
+.stores-select .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-color: transparent transparent #fff transparent;
+}
+#select2-stores-select-results {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'geomanist-light-webfont', Arial, sans-serif;
+  background-color: #010101;
+  border: 1px solid #fff;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+#select2-stores-select-results .select2-results__option[aria-selected=true] {
+  background: #010101;
+}
+#select2-stores-select-results .select2-results__option--highlighted[aria-selected] {
+  background: #9f9389;
+}
+.stores {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+@media only screen and (max-width: 1919px) {
+  .stores {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media only screen and (max-width: 1919px) {
+  .stores {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .stores {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+.stores__row {
+  color: #fff;
+}
+.stores__row a {
+  color: #fff;
+}
+.stores__row a:hover,
+.stores__row a:focus {
+  color: #9f9389;
+}
+.stores__row .stores__item-name {
+  color: #c7c8ca;
+}
+.stores__select-label-wrap,
+.stores__title-wrap {
+  padding-left: 65px;
+  padding-right: 65px;
+  text-align: right;
+}
+@media only screen and (max-width: 1400px) {
+  .stores__select-label-wrap,
+  .stores__title-wrap {
+    padding-left: 0;
+    padding-right: 30px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .stores__select-label-wrap,
+  .stores__title-wrap {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 20px;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .stores__select-label-wrap,
+  .stores__title-wrap {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}
+.stores__select-label {
+  font-family: 'geomanist-regular-webfont', Arial, sans-serif;
+  letter-spacing: 0.035em;
+}
+.stores__select-wrap {
+  padding-bottom: 50px;
+}
+@media only screen and (max-width: 1100px) {
+  .stores__select-wrap {
+    padding-bottom: 20px;
+  }
+}
+.stores__title {
+  font-size: 70px;
+  line-height: 1;
+}
+@media only screen and (max-width: 1919px) {
+  .stores__title {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .stores__title {
+    font-size: 40px;
+  }
+}
+.stores__title-img-wrap {
+  width: 75px;
+  padding-top: 20px;
+  margin-left: auto;
+}
+@media only screen and (max-width: 1100px) {
+  .stores__title-img-wrap {
+    display: none;
+  }
+}
+.stores__title-img-wrap img {
+  width: 100%;
+}
+.stores__title-img-wrap img:nth-child(2) {
+  display: none;
+}
+.stores__subtitle {
+  position: relative;
+  margin-bottom: 25px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+@media only screen and (max-width: 480px) {
+  .stores__subtitle {
+    text-align: center;
+  }
+}
+.stores__subtitle:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 5px;
+  width: 200px;
+  background: #fff;
+}
+@media only screen and (max-width: 480px) {
+  .stores__subtitle:after {
+    height: 2px;
+    width: 100%;
+  }
+}
+.stores__subtitle h3 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+.stores__body-wrap > .grid > div:nth-child(4n) {
+  clear: both;
+}
+@media only screen and (max-width: 768px) {
+  .stores__body-wrap > .grid > div:nth-child(4n) {
+    clear: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .stores__body-wrap > .grid > div:nth-child(3n) {
+    clear: both;
+  }
+}
+.stores__item {
+  padding-right: 100px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 1919px) {
+  .stores__item {
+    padding-right: 40px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .stores__item {
+    padding-right: 25px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .stores__item {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+.stores__item p {
+  margin-bottom: 8px;
+  font-family: 'geomanistbook', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+}
+@media only screen and (max-width: 480px) {
+  .stores__item p {
+    font-size: 14px;
+  }
+}
+.stores__item p:last-child {
+  margin-bottom: 0;
+}
+.stores__item p a {
+  text-decoration: none;
+}
+.stores__item-name {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-family: 'garamond_premr_pro_smb-it', 'geomanist-regular-webfont', Arial, sans-serif;
+  font-style: italic;
+  text-decoration: none;
+  letter-spacing: 0.035em;
+}
+@media only screen and (max-width: 480px) {
+  .stores__item-name {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
 }
 .topline-menu {
   position: relative;
