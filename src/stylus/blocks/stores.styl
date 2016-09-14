@@ -13,6 +13,59 @@
 	
 
 	&__row
+		color brand
+		
+		a
+			color brand
+			
+			&:hover,
+			&:focus
+				color light
+				
+		.stores__item-name
+			color brand
+			
+		.stores__subtitle
+			position relative
+			margin-bottom 25px
+			padding-bottom 15px
+			
+			+below(480px)
+				text-align center
+			
+			&:after
+				position absolute
+				left 0
+				bottom 0
+				content ''
+				display block
+				height 5px
+				width 200px
+				background brand
+				
+				+below(480px)
+					height 2px
+					width 100%
+				
+			h3
+				font-size 20px
+				line-height 1.2
+				
+		.stores__title-img-wrap
+			width 75px
+			padding-top 20px
+			margin-left auto
+			
+			+below(1100px)
+				display none
+			
+			img
+				width 100%
+				
+				&:nth-child(2)
+					display none
+					
+	&__row_active
 		color light
 		
 		a
@@ -24,6 +77,20 @@
 				
 		.stores__item-name
 			color #c7c8ca
+			
+		.stores__subtitle
+			
+			&:after
+				background light
+				
+		.stores__title-img-wrap
+			img
+				&:first-child
+					display none
+					
+				&:nth-child(2)
+					display block
+				
 			
 	&__select-label-wrap,
 	&__title-wrap
@@ -64,47 +131,6 @@
 		+below(1400px)
 			font-size 40px
 			
-		
-	&__title-img-wrap
-		width 75px
-		padding-top 20px
-		margin-left auto
-		
-		+below(1100px)
-			display none
-		
-		img
-			width 100%
-			
-			&:nth-child(2)
-				display none
-				
-	&__subtitle
-		position relative
-		margin-bottom 25px
-		padding-top 5px
-		padding-bottom 15px
-		
-		+below(480px)
-			text-align center
-		
-		&:after
-			position absolute
-			left 0
-			bottom 0
-			content ''
-			display block
-			height 5px
-			width 200px
-			background light
-			
-			+below(480px)
-				height 2px
-				width 100%
-			
-		h3
-			font-size 20px
-			line-height 1.2
 			
 	&__body-wrap
 		> .grid

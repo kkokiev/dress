@@ -118,6 +118,12 @@
 				<h1 class="intro__main-title">
 					<img src="images/logo-1.png" alt="Inbal Dror" class="intro__main-title-img">
 				</h1>
+
+				<div class="intro__video-wrap">
+					<div class="intro__video" id="intro-video">
+						
+					</div>
+				</div>
 			</div><!-- /.intro__wrap -->
 		</div><!-- /.intro -->
 
@@ -334,6 +340,46 @@
 <script src="lib/fancybox/jquery.fancybox.pack.js"></script>
 <!-- main js -->
 <script src="js/app.js"></script>
+
+<script>
+
+	// Load the IFrame Player API code asynchronously.
+	var tag = document.createElement('script');
+	tag.src = "https://www.youtube.com/player_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	// Replace the '#intro-video' element with an <iframe> and
+	// YouTube player after the API code downloads.
+	var player;
+	function onYouTubePlayerAPIReady() {
+
+		setTimeout(function(){
+			player = new YT.Player('intro-video', {
+				playerVars: {
+					autoplay: 1,
+					loop: 1,
+					controls: 0,
+					showinfo: 0,
+					autohide: 0,
+					modestbranding: 1,
+					vq: 'hd1080',
+					playlist: 'cofBzOPMulc'
+				},
+				videoId: 'cofBzOPMulc',
+				fitToBackground: true, 
+				events: {
+					'onReady': onPlayerReady,
+				}
+			});
+		}, 3000);
+		
+	}
+	function onPlayerReady(event){
+		player.mute();
+	}
+	
+</script>
 
 <!-- enable placeholder for IE9 -->
 <!--[if IE 9]>

@@ -50,25 +50,6 @@ if(!(window.console && console.log)) {
 
 
 	/**/
-	/*setup scrollspy for Stores page*/
-	/**/
-	$(window).on('scroll', function() {
-		var scrollTop = $(this).scrollTop();
-
-		$('.stores__title').each(function() {
-			var topDistance = $(this).offset().top;
-
-			if ( (topDistance) < scrollTop + 150 ) {
-				$(this).addClass('stores__title_active');
-			} else {
-				$(this).removeClass('stores__title_active');
-			}
-		});
-	});
-	/*end setup scrollspy for Stores page*/
-
-
-	/**/
 	/*setup home page scroller (white rectangle above "Contact us")*/
 	/**/
 
@@ -131,71 +112,29 @@ if(!(window.console && console.log)) {
 		padding: 0
 	});
 
-
+	/*show block with video after some time*/
+	setTimeout(function() {
+		$('.intro__video-wrap').fadeIn();
+	}, 3000);
 	
 
+	/**/
+	/*setup scrollspy for Stores page*/
+	/**/
+	$(window).on('scroll', function() {
+		var scrollTop = $(this).scrollTop();
 
+		$('.stores__row').each(function() {
+			var topDistance = $(this).offset().top;
 
+			if ( (topDistance) < scrollTop + 150 ) {
+				$(this).addClass('stores__row_active');
+			} else {
+				$(this).removeClass('stores__row_active');
+			}
+		});
+	});
+	/*end setup scrollspy for Stores page*/
 
-
-
-
-
-	// var galleryItem = $('.gallery-item__demo'),
-	// 	galleryItemPopup = $('.gallery-item__popup');
-
-	// //show popup on click
-	// galleryItem.on('click', function(){
-	// 	var thisGalleryPopup = $(this).next();
-	// 	thisGalleryPopup.css('display', 'block');
-
-	// 	//setup popup image height*
-	// 	var setPopupImgHeight = function(){
-	// 		var popupInnerHeight = thisGalleryPopup
-	// 				.find('.gallery-item__popup-inner')
-	// 				.height(),
-	// 			popupImg = thisGalleryPopup
-	// 				.find('.gallery-item__img'),
-	// 			popupImgWrap = thisGalleryPopup
-	// 				.find('.gallery-item__img-wrap');
-
-	// 		popupImg.css('max-height', popupInnerHeight);
-	// 	}
-	// 	setPopupImgHeight();
-	// 	$(window).resize(function(){
-	// 		setPopupImgHeight();
-	// 	});
-
-		
-	// 	взять левый офсет
-	// 	взять правый офсет = ширина экрана - (левый офсет + ширина айтема)
-
-	// 	если левый офсет < правого
-	// 		.gallery-item__img-wrap (релатив) получает left = левый офсет
-
-	// 	если левый офсет > правого
-	// 		.gallery-item__img-wrap (релатив) получает left = (левый офсет-ширина .gallery-item__img-wrap)
-		
-
-	// 	//check left and right offset of the current galleryItem
-	// 	var leftOffset = $(this).offset().left,
-	// 		galleryItemWidth = $(this).width(),
-	// 		windowWidth = $(window).width(),
-	// 		rightOffset = windowWidth - leftOffset - galleryItemWidth;
-
-	// 	if(leftOffset < rightOffset) {
-	// 		$('.gallery-item__img-wrap').css('left', (leftOffset - 90));
-	// 		//нужно сделать что-то с шириной картинки
-	// 		var maxImgWidth = $(window).width() -180 - leftOffset;
-	// 		$('.gallery-item__img-wrap').css('max-width', maxImgWidth);
-	// 	}
-
-
-	// });
-
-	// //hide popup
-	// galleryItemPopup.on('click', function(){
-	// 	galleryItemPopup.css('display', 'none');
-	// })
 
 })(jQuery);
